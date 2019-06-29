@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux';
 
-import { getSmurfs } from "../actions";
+import { getSmurfs, addSmurf } from "../actions";
 import './App.css';
 
 /*
@@ -27,7 +27,6 @@ constructor(props) {
   }
 
   handleSubmit = e => {
-    e.preventDefault();
     this.props.addSmurf(this.state.smurf)
   }
 
@@ -92,5 +91,5 @@ const mapStateToProps = state => ({
 
 export default connect(
   mapStateToProps,
-  { getSmurfs }
+  { getSmurfs, addSmurf }
 )(App);
