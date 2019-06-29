@@ -1,3 +1,5 @@
+import { FETCH_SMURFS_SUCCESS } from "../actions";
+
 /*
   Be sure to import in all of the action types from `../actions`
 */
@@ -21,3 +23,22 @@
   There is no need for 'combineReducers' in this project.
   Components can then read your store as, `state` and not `state.fooReducer`.
 */
+
+const initialState = {
+  smurfs: []
+}
+
+const reducer = (state = initialState, action) => {
+  switch(action.type) {
+    case FETCH_SMURFS_SUCCESS: {
+      return {
+        ...state, 
+        smurfs: action.payload
+      }
+    }
+    default: 
+      return state;
+  }
+}
+
+export default reducer
