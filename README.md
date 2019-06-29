@@ -8,7 +8,7 @@ This is an individual assessment. All work must be your own. Your challenge scor
 
 You are not allowed to collaborate during the Sprint Challenge. However, you are encouraged to follow the twenty-minute rule and seek support from your PM and Instructor in your cohort help channel on Slack. Your work reflects your proficiency throughout Redux and your command of the concepts and techniques in the Redux I - II and Async Redux I - I modules.
 
-You have three hours to complete this challenge. Plan your time accordingly.
+You have three hours to complete this challenge. Plan your time accordingly....
 
 ## Commits
 
@@ -23,8 +23,15 @@ In this challenge, you are to build the Smurfs village once again, only this tim
 Demonstrate your understanding of this Sprint's concepts by answering the following free-form questions. Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager.
 
 - [ ] In your own words, describe `actions`, `reducers` and the `store` and their role in Redux. What does each piece do? Why is the store known as a 'single source of truth' in a redux application?
+~~Actions are the when something happens in the app. Reducers will determine what happens when an action is triggered. Store is where the state is held. The store
+is known as the single source of truth because it manages the state for the entire application. 
+
 - [ ] What is the difference between Application state and Component state? When would be a good time to use one over the other?
+~~Application state is when state is managed in one place for all components. Component state is when a component has its own state, or copy of state. Component state is good in smaller applications when it is easy to pass around, or to help handle the fields in forms. Application state is much better in large applications to keep the state from becoming overwhelming.
+
 - [ ] Describe `redux-thunk`, what does it allow us to do? How does it change our `action-creators`?
+~~Redux-thunk allows to catch an action after it triggers and do more with it. Instead of it just firing off and sending the info to the reducer, we can manipulate
+that information.  
 
 ## Project Set Up
 
